@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|c:\\users\\sairajk\\.gemini\\antigravity\\scratch\\its\\its.application\\services\\authanddashboardservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|solutionrelative:its.application\\services\\authanddashboardservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|c:\\users\\sairajk\\.gemini\\antigravity\\scratch\\its\\its.application\\services\\assetandallocationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|solutionrelative:its.application\\services\\assetandallocationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA42973A-5328-4033-9476-F1E68C9A9486}|Its.Api\\Its.Api.csproj|c:\\users\\sairajk\\.gemini\\antigravity\\scratch\\its\\its.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA42973A-5328-4033-9476-F1E68C9A9486}|Its.Api\\Its.Api.csproj|solutionrelative:its.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|c:\\users\\sairajk\\.gemini\\antigravity\\scratch\\its\\its.application\\services\\requestrepairreplacementandreportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|solutionrelative:its.application\\services\\requestrepairreplacementandreportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF2B2FEF-2E5A-48BE-A4C1-0AD8A694864F}|Its.Infrastructure\\Its.Infrastructure.csproj|c:\\users\\sairajk\\.gemini\\antigravity\\scratch\\its\\its.infrastructure\\repositories\\repositoryandunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF2B2FEF-2E5A-48BE-A4C1-0AD8A694864F}|Its.Infrastructure\\Its.Infrastructure.csproj|solutionrelative:its.infrastructure\\repositories\\repositoryandunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|c:\\users\\sairajk\\.gemini\\antigravity\\scratch\\its\\its.application\\interfaces\\allinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC1FC12-46C1-4ED4-B024-B3869CE45DC3}|Its.Application\\Its.Application.csproj|solutionrelative:its.application\\interfaces\\allinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA42973A-5328-4033-9476-F1E68C9A9486}|Its.Api\\Its.Api.csproj|c:\\users\\sairajk\\.gemini\\antigravity\\scratch\\its\\its.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FA42973A-5328-4033-9476-F1E68C9A9486}|Its.Api\\Its.Api.csproj|solutionrelative:its.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthAndDashboardServices.cs",
+              "DocumentMoniker": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Services\\AuthAndDashboardServices.cs",
+              "RelativeDocumentMoniker": "Its.Application\\Services\\AuthAndDashboardServices.cs",
+              "ToolTip": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Services\\AuthAndDashboardServices.cs",
+              "RelativeToolTip": "Its.Application\\Services\\AuthAndDashboardServices.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T10:59:50.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssetAndAllocationServices.cs",
+              "DocumentMoniker": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Services\\AssetAndAllocationServices.cs",
+              "RelativeDocumentMoniker": "Its.Application\\Services\\AssetAndAllocationServices.cs",
+              "ToolTip": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Services\\AssetAndAllocationServices.cs",
+              "RelativeToolTip": "Its.Application\\Services\\AssetAndAllocationServices.cs",
+              "ViewState": "AgIAAHYBAAAAAAAAAAA1wEcCAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T09:44:41.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AllInterfaces.cs",
+              "DocumentMoniker": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Interfaces\\AllInterfaces.cs",
+              "RelativeDocumentMoniker": "Its.Application\\Interfaces\\AllInterfaces.cs",
+              "ToolTip": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Interfaces\\AllInterfaces.cs",
+              "RelativeToolTip": "Its.Application\\Interfaces\\AllInterfaces.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwDMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T09:20:49.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepositoryAndUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Infrastructure\\Repositories\\RepositoryAndUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Its.Infrastructure\\Repositories\\RepositoryAndUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Infrastructure\\Repositories\\RepositoryAndUnitOfWork.cs",
+              "RelativeToolTip": "Its.Infrastructure\\Repositories\\RepositoryAndUnitOfWork.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAA4wMQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T09:12:25.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestRepairReplacementAndReportServices.cs",
+              "DocumentMoniker": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Services\\RequestRepairReplacementAndReportServices.cs",
+              "RelativeDocumentMoniker": "Its.Application\\Services\\RequestRepairReplacementAndReportServices.cs",
+              "ToolTip": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Application\\Services\\RequestRepairReplacementAndReportServices.cs",
+              "RelativeToolTip": "Its.Application\\Services\\RequestRepairReplacementAndReportServices.cs",
+              "ViewState": "AgIAAEcEAAAAAAAAAAAAwFIEAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T08:59:29.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Its.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Api\\Program.cs",
+              "RelativeToolTip": "Its.Api\\Program.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAwGQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T07:35:41.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Its.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\sairajk\\.gemini\\antigravity\\scratch\\ITS\\Its.Api\\appsettings.json",
+              "RelativeToolTip": "Its.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-29T06:56:10.087Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

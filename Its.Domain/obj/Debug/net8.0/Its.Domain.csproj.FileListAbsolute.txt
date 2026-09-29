@@ -1,0 +1,11 @@
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\bin\Debug\net8.0\Its.Domain.deps.json
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\bin\Debug\net8.0\Its.Domain.dll
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\bin\Debug\net8.0\Its.Domain.pdb
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\Its.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\Its.Domain.AssemblyInfoInputs.cache
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\Its.Domain.AssemblyInfo.cs
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\Its.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\Its.Domain.dll
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\refint\Its.Domain.dll
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\Its.Domain.pdb
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Domain\obj\Debug\net8.0\ref\Its.Domain.dll

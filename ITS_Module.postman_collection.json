@@ -1,0 +1,260 @@
+{
+  "info": {
+    "_postman_id": "814423c7-a890-4a46-b25d-703e2fdb3f79",
+    "name": "ITS Module API (IT Asset Allocation)",
+    "description": "Postman collection for Employee Management System (EMS) IT Asset Allocation Module",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login - Manager",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"manager\",\n  \"password\": \"Manager@123\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Login - Executive",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"exec1\",\n  \"password\": \"Exec@123\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Login - Employee",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"emp005\",\n  \"password\": \"Emp@123\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Get Current User Profile",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/auth/me", "host": ["{{baseUrl}}"], "path": ["api", "auth", "me"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dashboards",
+      "item": [
+        {
+          "name": "Manager Dashboard",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/dashboard/manager", "host": ["{{baseUrl}}"], "path": ["api", "dashboard", "manager"] }
+          }
+        },
+        {
+          "name": "Executive Dashboard",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/dashboard/executive", "host": ["{{baseUrl}}"], "path": ["api", "dashboard", "executive"] }
+          }
+        },
+        {
+          "name": "Employee Dashboard",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/dashboard/employee", "host": ["{{baseUrl}}"], "path": ["api", "dashboard", "employee"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Assets",
+      "item": [
+        {
+          "name": "List Assets",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/assets?pageSize=20", "host": ["{{baseUrl}}"], "path": ["api", "assets"], "query": [{ "key": "pageSize", "value": "20" }] }
+          }
+        },
+        {
+          "name": "Get Available Assets",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/assets/available", "host": ["{{baseUrl}}"], "path": ["api", "assets", "available"] }
+          }
+        },
+        {
+          "name": "Check Asset Rules (Availability, Condition, Warranty)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/assets/2/check?employeeId=1", "host": ["{{baseUrl}}"], "path": ["api", "assets", "2", "check"], "query": [{ "key": "employeeId", "value": "1" }] }
+          }
+        },
+        {
+          "name": "Assign Asset",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"employeeId\": 1,\n  \"requestId\": 1,\n  \"expectedReturnDate\": \"2027-01-01\",\n  \"condition\": \"Good\",\n  \"remarks\": \"Laptop issued for development work\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/assets/2/assign", "host": ["{{baseUrl}}"], "path": ["api", "assets", "2", "assign"] }
+          }
+        },
+        {
+          "name": "Return Asset",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"returnDate\": \"2026-09-29T10:00:00Z\",\n  \"conditionAtReturn\": \"Good\",\n  \"remarks\": \"Project completed, returned in good order\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/assets/1/return", "host": ["{{baseUrl}}"], "path": ["api", "assets", "1", "return"] }
+          }
+        },
+        {
+          "name": "Transfer Asset",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targetEmployeeId\": 2,\n  \"condition\": \"Good\",\n  \"remarks\": \"Handover to new project lead\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/assets/1/transfer", "host": ["{{baseUrl}}"], "path": ["api", "assets", "1", "transfer"] }
+          }
+        },
+        {
+          "name": "Asset Allocation History",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/assets/1/history", "host": ["{{baseUrl}}"], "path": ["api", "assets", "1", "history"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Requests",
+      "item": [
+        {
+          "name": "Create Request (Employee)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"assetCategoryId\": 1,\n  \"reason\": \"High-performance development laptop required for microservices build\",\n  \"requiredDate\": \"2026-10-15\",\n  \"priority\": \"High\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/requests", "host": ["{{baseUrl}}"], "path": ["api", "requests"] }
+          }
+        },
+        {
+          "name": "Validate & Assign Executive (Manager)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"executiveId\": 2,\n  \"remarks\": \"Validated. Priya please check available ThinkPads and assign.\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/requests/2/assign-executive", "host": ["{{baseUrl}}"], "path": ["api", "requests", "2", "assign-executive"] }
+          }
+        },
+        {
+          "name": "Allocate Request (Executive)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"assetId\": 3,\n  \"condition\": \"Good\",\n  \"remarks\": \"Allocated Lenovo ThinkPad T14\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/requests/2/allocate", "host": ["{{baseUrl}}"], "path": ["api", "requests", "2", "allocate"] }
+          }
+        },
+        {
+          "name": "Reject Request (Manager / Executive)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"reason\": \"Out of stock in Pune regional warehouse; pending next procurement cycle.\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/api/requests/3/reject", "host": ["{{baseUrl}}"], "path": ["api", "requests", "3", "reject"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {
+          "name": "Export Assets CSV",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/reports/assets?format=csv", "host": ["{{baseUrl}}"], "path": ["api", "reports", "assets"], "query": [{ "key": "format", "value": "csv" }] }
+          }
+        },
+        {
+          "name": "Export Allocations CSV",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{baseUrl}}/api/reports/allocations?format=csv", "host": ["{{baseUrl}}"], "path": ["api", "reports", "allocations"], "query": [{ "key": "format", "value": "csv" }] }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:5000" },
+    { "key": "token", "value": "" }
+  ]
+}

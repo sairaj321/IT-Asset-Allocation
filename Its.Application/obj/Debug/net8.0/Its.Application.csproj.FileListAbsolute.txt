@@ -1,0 +1,15 @@
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Application.csproj.AssemblyReference.cache
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Application.AssemblyInfoInputs.cache
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Application.AssemblyInfo.cs
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Application.csproj.CoreCompileInputs.cache
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\bin\Debug\net8.0\Its.Application.deps.json
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\bin\Debug\net8.0\Its.Application.dll
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\bin\Debug\net8.0\Its.Application.pdb
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\bin\Debug\net8.0\Its.Domain.dll
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\bin\Debug\net8.0\Its.Domain.pdb
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Appl.AAE61549.Up2Date
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Application.dll
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\refint\Its.Application.dll
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\Its.Application.pdb
+C:\Users\sairajk\.gemini\antigravity\scratch\ITS\Its.Application\obj\Debug\net8.0\ref\Its.Application.dll

@@ -1,0 +1,119 @@
+@baseUrl = http://localhost:5000/api
+
+### 1. Login as ITS Manager
+# @name loginManager
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "manager",
+  "password": "Manager@123"
+}
+
+### Store Token
+@managerToken = {{loginManager.response.body.accessToken}}
+
+### 2. Login as ITS Executive
+# @name loginExec
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "exec1",
+  "password": "Exec@123"
+}
+
+### Store Executive Token
+@execToken = {{loginExec.response.body.accessToken}}
+
+### 3. Login as Employee
+# @name loginEmp
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "emp005",
+  "password": "Emp@123"
+}
+
+### Store Employee Token
+@empToken = {{loginEmp.response.body.accessToken}}
+
+### 4. Get Current User Profile
+GET {{baseUrl}}/auth/me
+Authorization: Bearer {{managerToken}}
+
+### 5. Manager Dashboard Data
+GET {{baseUrl}}/dashboard/manager
+Authorization: Bearer {{managerToken}}
+
+### 6. Executive Dashboard Data
+GET {{baseUrl}}/dashboard/executive
+Authorization: Bearer {{execToken}}
+
+### 7. Employee Dashboard Data
+GET {{baseUrl}}/dashboard/employee
+Authorization: Bearer {{empToken}}
+
+### 8. List Assets with Filters
+GET {{baseUrl}}/assets?pageSize=10&status=Available
+Authorization: Bearer {{managerToken}}
+
+### 9. Check Asset Eligibility Pipeline (Availability, Condition, Warranty)
+POST {{baseUrl}}/assets/2/check?employeeId=1
+Authorization: Bearer {{execToken}}
+
+### 10. Assign Asset to Employee
+POST {{baseUrl}}/assets/2/assign
+Authorization: Bearer {{execToken}}
+Content-Type: application/json
+
+{
+  "employeeId": 1,
+  "requestId": 1,
+  "expectedReturnDate": "2027-01-01",
+  "condition": "Good",
+  "remarks": "Laptop issued for development work"
+}
+
+### 11. Return Asset to Inventory
+POST {{baseUrl}}/assets/1/return
+Authorization: Bearer {{execToken}}
+Content-Type: application/json
+
+{
+  "returnDate": "2026-09-29T10:00:00Z",
+  "conditionAtReturn": "Good",
+  "remarks": "Returned in good working order"
+}
+
+### 12. Transfer Asset
+POST {{baseUrl}}/assets/1/transfer
+Authorization: Bearer {{execToken}}
+Content-Type: application/json
+
+{
+  "targetEmployeeId": 2,
+  "condition": "Good",
+  "remarks": "Handover to peer engineer"
+}
+
+### 13. Asset Allocation History
+GET {{baseUrl}}/assets/1/history
+Authorization: Bearer {{managerToken}}
+
+### 14. Create Asset Requisition Request (Employee)
+POST {{baseUrl}}/requests
+Authorization: Bearer {{empToken}}
+Content-Type: application/json
+
+{
+  "assetCategoryId": 1,
+  "reason": "Secondary development laptop for microservices testing",
+  "requiredDate": "2026-10-15",
+  "priority": "High"
+}
+
+### 15. Export Asset Report CSV
+GET {{baseUrl}}/reports/assets?format=csv
+Authorization: Bearer {{managerToken}}
